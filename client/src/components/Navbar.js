@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <>
@@ -40,8 +42,12 @@ export default function Navbar() {
           <a className="btn btn-ghost normal-case text-xl">WoDat?</a>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost ">Log in</button>
-          <button className="btn btn-ghost">Sing up</button>
+          <Link to="/login">
+            <button className="btn btn-ghost ">Log in</button>
+          </Link>
+          <Link to="/signup">
+            <button className="btn btn-ghost">Sing up</button>
+          </Link>
         </div>
       </div>
     </>

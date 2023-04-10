@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
 export default function Homepage() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function Homepage() {
           and track safe places to find your beloved but easy to forget objects
         </p>
       </div> */}
-
+      <Navbar />
       <div className="hero h-screen bg-movingday object-none">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
